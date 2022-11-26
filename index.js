@@ -23,9 +23,7 @@ const client = new Client({
 client.login(process.env.token);
 client.commands = new Collection();
 client.prefix = PREFIX;
-client.user.setAvatar('./IMG_1449.jpg').catch(() => { console.log('`\❌ Please wait the couldown or povide a valid url!`')
-})
-        client.user.setUsername("Taksim");
+
 client.queue = new Map();
 const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
