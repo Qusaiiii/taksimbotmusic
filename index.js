@@ -23,8 +23,7 @@ const client = new Client({
 client.login(process.env.token);
 client.commands = new Collection();
 client.prefix = PREFIX;
-let imagefetch = "https://media.discordapp.net/attachments/780867145847537664/1046180722244857886/IMG_1449.jpg?width=620&height=620"
-client.user.setAvatar(imagefetch).catch(() => { console.log('`\❌ Please wait the couldown or povide a valid url!`')
+client.user.setAvatar('./IMG_1449.jpg').catch(() => { console.log('`\❌ Please wait the couldown or povide a valid url!`')
 })
         client.user.setUsername("Taksim");
 client.queue = new Map();
