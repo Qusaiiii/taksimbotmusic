@@ -19,8 +19,8 @@ const client = new Client({
   disableMentions: "everyone",
   restTimeOffset: 0
 });
-
-client.login(process.env.token);
+require('dotenv').config();
+client.login(process.env.TOKEN);
 client.commands = new Collection();
 client.prefix = PREFIX;
 
