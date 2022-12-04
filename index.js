@@ -20,7 +20,7 @@ const client = new Client({
   restTimeOffset: 0
 });
 require('dotenv').config();
-client.login(process.env.TOKEN);
+client.login(process.env.token);
 client.commands = new Collection();
 client.prefix = PREFIX;
 
